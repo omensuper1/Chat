@@ -16,7 +16,7 @@ export default function Home() {
   const { username, secret } = useContext(Context);
   const [showChat, setShowChat] = useState(false);
   const router = useRouter();
-
+document.title = "Chatpage";  
   useEffect(() => {
     if (typeof document !== undefined) {
       setShowChat(true);
